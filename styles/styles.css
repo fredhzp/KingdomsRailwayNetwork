@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('/pics/game-background.avif');
+  }
+  
+  #menu, #gameScreen, #description {
+    text-align: center;
+    max-width: 600px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 10px; 
+  }
+
+  #menuButtons {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    width: 100%; 
+    padding: 20px 0; 
+    box-sizing: border-box; 
+  }
+  
+
+  #menuButtons button {
+    background-color: brown; 
+    color: white; 
+    padding: 12px 20px;
+    border-radius: 10px; 
+    font-size: 18px; 
+    cursor: pointer; 
+    width: 100%; 
+    transition: all 0.3s ease; 
+    box-sizing: border-box; 
+  }
+  
+
+  #menuButtons button:hover {
+    background-color:lightsalmon; 
+    transform: scale(1.05); 
+  }
+  
+  
+  #menuButtons button {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+  }
+  
+  #menuButtons button:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); 
+  }
+  
+  
+  #grid {
+    display: grid;
+    gap: 1px;
+    --grid-size: 5; 
+    grid-template-columns: repeat(var(--grid-size), 0fr);
+    grid-template-rows: repeat(var(--grid-size), 0fr);
+  }
+  
+  #grid div {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #333;
+  }
+
+  .grid-cell {
+    width: 50px;
+    height: 50px;
+    background-size: cover; 
+    background-position: center; 
+    border: 1px solid #333;
+}
+
+
+  .grid-cell.track-straight-horizontal {
+    background-image: url('/pics/straight_rail.png');
+    transform: rotate(0deg);
+}
+
+.grid-cell.track-straight-vertical {
+    background-image: url('/pics/straight_rail.png');
+    transform: rotate(90deg);
+}
+
+.grid-cell.track-curved-left-0 {
+    background-image: url('/pics/curve_rail.png');
+    transform: rotate(0deg);
+}
+
+.grid-cell.track-curved-left-90 {
+    background-image: url('/pics/curve_rail.png');
+    transform: rotate(90deg);
+}
+
+.grid-cell.track-curved-left-180 {
+    background-image: url('/pics/curve_rail.png');
+    transform: rotate(180deg);
+}
+
+.grid-cell.track-curved-left-270 {
+    background-image: url('/pics/curve_rail.png');
+    transform: rotate(270deg);
+}
+
+.grid-cell.track-curved-left-360 {
+    background-image: url('/pics/curve_rail.png');
+    transform: rotate(360deg);
+}
+
+
+  .grid-cell.empty {
+    background-image: url('/pics/empty.png'); /* Light gray for empty cells */
+  }
+  
+  .grid-cell.bridge {
+    background-image: url('/pics/bridge.png');  /* Brown for bridges */
+  }
+  
+  .grid-cell.rocks {
+    background-image: url('/pics/mountain.png');  /* Dark gray for rocks */
+  }
+  
+  .grid-cell.river {
+    background-image: url('/pics/oasis.png');  /* Green for river */
+  }
+
+/* Button Styling for Track Types */
+#trackButtons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  #trackButtons button {
+    background-color: #2196F3;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #trackButtons button:hover {
+    background-color: #1976D2;
+  }
+  
+  #trackButtons button:active {
+    background-color: #1565C0;
+  }
+  
+  #trackButtons button:disabled {
+    background-color: #b0bec5;
+    cursor: not-allowed;
+  }
+  
+  .messageBox {
+    position: absolute;  
+    top: 0;              
+    left: 50%;           
+    transform: translateX(-50%);  
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);  
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    display: none;  
+    z-index: 1000;  
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;  
+}
+
+.messageBox.show {
+    display: block;
+    opacity: 1;  /* Make it visible */
+}
+
+    .leaderboard{
+        display: block;
+        position: absolute;  
+        transform: translateX(-50%);  
+        top: 0;              
+        left: 50%;           
+    }
+
+  
+  

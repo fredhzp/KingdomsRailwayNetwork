@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seeknotland Railway Game</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div id="message"></div>
+    <div id="menu">
+        <h1 style="font-family:Impact, sans-serif; color:brown">Railway Network</h1>
+        <div id="leaderboard">
+          <h3>Leaderboard</h3>
+          <p id="easyLeaderboard">Easy: No record</p>
+          <p id="hardLeaderboard">Hard: No record</p>
+        </div>
+        <input type="text" id="playerName" placeholder="Enter your name">
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="hard">Hard</option>
+        </select>
+        <div id="menuButtons">
+          <button id="startGameBtn">Start Game</button>
+          <button id="showDescriptionBtn">Game Rules</button>
+        </div>
+      </div>
+
+<div id="gameScreen" style="display: none;">
+    <div id="header">
+      <h2 id="displayPlayerName"></h2>
+      <p id="timer">Time: 0s</p>
+    </div>
+
+    <div id="messageBox" class="message-box"></div>
+  
+    <div id="trackButtons">
+      <button id="straightBtn">Straight Track</button>
+      <button id="curvedBtn">Curved Track</button>
+      <button id="removeTrackBtn">Remove Track</button>
+    </div>
+  
+    <div id="grid"></div>
+  </div>
+  
+  <div id="description" style="display: none;">
+    <h2>Game Rules</h2>
+    <p>put track on every possible box that u can put track and connect them.</p>
+    <button id="hideDescriptionBtn">Back to Menu</button>
+  </div>
+
+  <script src="script/script.js"></script>
+</body>
+</html>
