@@ -1,10 +1,6 @@
 # Kingdom's Railway Network 🚂
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-
 A puzzle game where you design a circular railway through challenging terrain. Built with pure JavaScript, HTML, and CSS.
-
-![Game Screenshot](/assets/screenshots/gameplay.png)
 
 ## Table of Contents
 - [Features](#features)
@@ -61,4 +57,4 @@ No installation required! Simply:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/kingdom-railway.git
+   git clone https://github.com/fredhzp/kingdom-railway.git
