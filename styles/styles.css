@@ -5,7 +5,7 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-image: url('/pics/game-background.avif');
+    background-image: url('../pics/game-background.avif');
   }
   
   #menu, #gameScreen, #description {
@@ -79,55 +79,55 @@ body {
 
 
   .grid-cell.track-straight-horizontal {
-    background-image: url('/pics/straight_rail.png');
+    background-image: url('../pics/straight_rail.png');
     transform: rotate(0deg);
 }
 
 .grid-cell.track-straight-vertical {
-    background-image: url('/pics/straight_rail.png');
+    background-image: url('../pics/straight_rail.png');
     transform: rotate(90deg);
 }
 
 .grid-cell.track-curved-left-0 {
-    background-image: url('/pics/curve_rail.png');
+    background-image: url('../pics/curve_rail.png');
     transform: rotate(0deg);
 }
 
 .grid-cell.track-curved-left-90 {
-    background-image: url('/pics/curve_rail.png');
+    background-image: url('../pics/curve_rail.png');
     transform: rotate(90deg);
 }
 
 .grid-cell.track-curved-left-180 {
-    background-image: url('/pics/curve_rail.png');
+    background-image: url('../pics/curve_rail.png');
     transform: rotate(180deg);
 }
 
 .grid-cell.track-curved-left-270 {
-    background-image: url('/pics/curve_rail.png');
+    background-image: url('../pics/curve_rail.png');
     transform: rotate(270deg);
 }
 
 .grid-cell.track-curved-left-360 {
-    background-image: url('/pics/curve_rail.png');
+    background-image: url('../pics/curve_rail.png');
     transform: rotate(360deg);
 }
 
 
   .grid-cell.empty {
-    background-image: url('/pics/empty.png'); /* Light gray for empty cells */
+    background-image: url('../pics/empty.png'); /* Light gray for empty cells */
   }
   
   .grid-cell.bridge {
-    background-image: url('/pics/bridge.png');  /* Brown for bridges */
+    background-image: url('../pics/bridge.png');  /* Brown for bridges */
   }
   
   .grid-cell.rocks {
-    background-image: url('/pics/mountain.png');  /* Dark gray for rocks */
+    background-image: url('../pics/mountain.png');  /* Dark gray for rocks */
   }
   
   .grid-cell.river {
-    background-image: url('/pics/oasis.png');  /* Green for river */
+    background-image: url('../pics/oasis.png');  /* Green for river */
   }
 
 /* Button Styling for Track Types */
